@@ -12,7 +12,7 @@ import java.io.IOException;
  */
 public class WarpToPartyConfig extends ConfigurationCreator {
 	public WarpToPartyConfig(File pFile, PAFExtension pPlugin) throws IOException {
-		super(pFile, pPlugin);
+		super(pFile, pPlugin, true);
 		readFile();
 		loadDefaults();
 		saveFile();
