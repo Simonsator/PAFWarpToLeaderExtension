@@ -13,6 +13,7 @@ import java.io.IOException;
  * @author Simonsator
  * @version 1.0 09.06.2017.
  */
+@SuppressWarnings("unused")
 public class WarpToPartyPlugin extends PAFExtension {
 	@Override
 	public void onEnable() {
