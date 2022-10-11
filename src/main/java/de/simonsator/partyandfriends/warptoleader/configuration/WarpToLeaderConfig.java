@@ -10,8 +10,8 @@ import java.io.IOException;
  * @author 00pfl
  * @version 1.0 09.06.2017.
  */
-public class WarpToPartyConfig extends ConfigurationCreator {
-	public WarpToPartyConfig(File pFile, PAFExtension pPlugin) throws IOException {
+public class WarpToLeaderConfig extends ConfigurationCreator {
+	public WarpToLeaderConfig(File pFile, PAFExtension pPlugin) throws IOException {
 		super(pFile, pPlugin, true);
 		readFile();
 		loadDefaults();
