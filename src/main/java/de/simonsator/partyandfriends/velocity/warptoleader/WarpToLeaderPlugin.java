@@ -1,13 +1,14 @@
-package de.simonsator.partyandfriends.warptoleader;
+package de.simonsator.partyandfriends.velocity.warptoleader;
 
-import de.simonsator.partyandfriends.api.PAFExtension;
-import de.simonsator.partyandfriends.party.command.PartyCommand;
-import de.simonsator.partyandfriends.utilities.ConfigurationCreator;
-import de.simonsator.partyandfriends.warptoleader.commands.party.subcommands.WarpCommand;
-import de.simonsator.partyandfriends.warptoleader.configuration.WarpToLeaderConfig;
+import de.simonsator.partyandfriends.velocity.api.PAFExtension;
+import de.simonsator.partyandfriends.velocity.party.command.PartyCommand;
+import de.simonsator.partyandfriends.velocity.utilities.ConfigurationCreator;
+import de.simonsator.partyandfriends.velocity.warptoleader.commands.party.subcommands.WarpCommand;
+import de.simonsator.partyandfriends.velocity.warptoleader.configuration.WarpToLeaderConfig;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Path;
 
 /**
  * @author Simonsator
@@ -15,6 +16,10 @@ import java.io.IOException;
  */
 @SuppressWarnings("unused")
 public class WarpToLeaderPlugin extends PAFExtension {
+	public WarpToLeaderPlugin(Path folder) {
+		super(folder);
+	}
+
 	@Override
 	public void onEnable() {
 		try {
@@ -26,5 +31,10 @@ public class WarpToLeaderPlugin extends PAFExtension {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	@Override
+	public String getName() {
+		return "WarpToLeaderExtension";
 	}
 }
