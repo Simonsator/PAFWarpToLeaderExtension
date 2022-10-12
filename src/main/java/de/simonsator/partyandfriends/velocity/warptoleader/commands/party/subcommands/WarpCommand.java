@@ -1,14 +1,14 @@
-package de.simonsator.partyandfriends.warptoleader.commands.party.subcommands;
+package de.simonsator.partyandfriends.velocity.warptoleader.commands.party.subcommands;
 
-import de.simonsator.partyandfriends.api.pafplayers.OnlinePAFPlayer;
-import de.simonsator.partyandfriends.api.party.PartyManager;
-import de.simonsator.partyandfriends.api.party.PlayerParty;
-import de.simonsator.partyandfriends.api.party.abstractcommands.LeaderNeededCommand;
-import de.simonsator.partyandfriends.utilities.ConfigurationCreator;
+import de.simonsator.partyandfriends.velocity.api.pafplayers.OnlinePAFPlayer;
+import de.simonsator.partyandfriends.velocity.api.party.PartyManager;
+import de.simonsator.partyandfriends.velocity.api.party.PlayerParty;
+import de.simonsator.partyandfriends.velocity.api.party.abstractcommands.LeaderNeededCommand;
+import de.simonsator.partyandfriends.velocity.utilities.ConfigurationCreator;
 
 import java.util.List;
 
-import static de.simonsator.partyandfriends.main.Main.getInstance;
+import static de.simonsator.partyandfriends.velocity.main.Main.getInstance;
 
 public class WarpCommand extends LeaderNeededCommand {
 	private final ConfigurationCreator CONFIG;

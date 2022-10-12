@@ -1,8 +1,0 @@
-name: PAF-Warp-To-Leader-Extension
-version: ${project.version}
-author: Simonsator
-depends: [ PartyAndFriends ]
-depend: [ PartyAndFriends ]
-main: de.simonsator.partyandfriends.warptoleader.WarpToPartyPlugin
-description: An add-on for party and friends to add /party leaderwarp
-api-version: 1.13
