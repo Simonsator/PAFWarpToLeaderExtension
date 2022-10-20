@@ -5,7 +5,7 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<groupId>de.simonsator</groupId>
-	<artifactId>PAF-Warp-To-Leader-Extension</artifactId>
+	<artifactId>PAF-Warp-To-Leader-Extension-Velocity</artifactId>
 	<version>1.0.2-RELEASE</version>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -29,6 +29,13 @@
 				<filtering>true</filtering>
 			</resource>
 		</resources>
+		<extensions>
+			<extension>
+				<groupId>org.apache.maven.wagon</groupId>
+				<artifactId>wagon-ssh</artifactId>
+				<version>3.5.2</version>
+			</extension>
+		</extensions>
 	</build>
 	<repositories>
 		<repository>
@@ -53,4 +60,10 @@
 			<scope>provided</scope>
 		</dependency>
 	</dependencies>
+	<distributionManagement>
+		<repository>
+			<id>simonsators-web-server</id>
+			<url>sftp://ssh.strato.de/simonsator/repo</url>
+		</repository>
+	</distributionManagement>
 </project>
